@@ -1,0 +1,136 @@
+// const urlBacon = "https://jsonplaceholder.typicode.com/todos/1";
+// (function() {
+//     $.ajax({
+//             method: "GET",
+//             url: urlBacon,
+//             dataType: "json"
+//         })
+//         .done(function(data) {
+//             console.log(data);
+//         })
+//         .fail(function() {
+//             alert("no good");
+//         });
+// })()
+
+
+
+// $.ajax({
+//         url: "https://jsonplaceholder.typicode.com/todos/1",
+//         beforeSend: function(xhr) {
+//             xhr.overrideMimeType("text/plain; charset=x-user-defined");
+//         }
+//     })
+//     .done(function(data) {
+//         if (console && console.log) {
+//             console.log("Sample of data:", data.slice(0, 100));
+//         }
+//     });
+
+
+
+// // Get all users
+// var url = "https://fakestoreapi.com/products";
+// var xhr = new XMLHttpRequest()
+// xhr.open('GET', url, true)
+// xhr.onload = function() {
+//     var users = JSON.parse(xhr.responseText);
+//     if (xhr.readyState == 4 && xhr.status == "200") {
+//         console.table(users);
+//     } else {
+//         console.error(users);
+//     }
+// }
+// xhr.send(null);
+
+
+
+// // Get a user
+// var url = "https://fakestoreapi.com/products";
+// var xhr = new XMLHttpRequest()
+// xhr.open('GET', url + '/1', true)
+// xhr.onload = function() {
+//     var users = JSON.parse(xhr.responseText);
+//     if (xhr.readyState == 4 && xhr.status == "200") {
+//         console.table(users);
+//     } else {
+//         console.error(users);
+//     }
+// }
+// xhr.send(null);
+
+
+
+// // Post a user
+// var url = "https://jsonplaceholder.typicode.com/todos";
+// var data = {};
+// data.userID = 88;
+// data.title = "hahaha";
+// data.complete = true;
+// var json = JSON.stringify(data);
+
+// var xhr = new XMLHttpRequest();
+// xhr.open("POST", url, true);
+// xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+// xhr.onload = function() {
+//     var users = JSON.parse(xhr.responseText);
+//     if (xhr.readyState == 4 && xhr.status == "201") {
+//         console.table(users);
+//     } else {
+//         console.error(users);
+//     }
+// }
+// xhr.send(json);
+
+
+
+// //Update a user
+// var url = "https://jsonplaceholder.typicode.com/todos";
+// var data = {};
+// data.userID = 77;
+// data.title = "hehehe";
+// data.complete = false;
+// var json = JSON.stringify(data);
+
+// var xhr = new XMLHttpRequest();
+// xhr.open("PUT", url + '/12', true);
+// xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+// xhr.onload = function() {
+//     var users = JSON.parse(xhr.responseText);
+//     if (xhr.readyState == 4 && xhr.status == "200") {
+//         console.table(users);
+//     } else {
+//         console.error(users);
+//     }
+// }
+// xhr.send(json);
+
+
+
+// // Delete a user
+// var url = "https://jsonplaceholder.typicode.com/todos";
+// var xhr = new XMLHttpRequest();
+// xhr.open("DELETE", url + '/12', true);
+// xhr.onload = function() {
+//     var users = JSON.parse(xhr.responseText);
+//     if (xhr.readyState == 4 && xhr.status == "200") {
+//         console.table(users);
+//     } else {
+//         console.error(users);
+//     }
+// }
+// xhr.send(null);
+
+// //Get a  new user 12
+// var url = "https://jsonplaceholder.typicode.com/todos";
+// var xhr = new XMLHttpRequest()
+// xhr.open('GET', url + '/12', true)
+// xhr.onload = function() {
+//     var users = JSON.parse(xhr.responseText);
+//     if (xhr.readyState == 4 && xhr.status == "200") {
+//         console.table(users);
+//     } else {
+//         console.error(users);
+//     }
+// }
+// xhr.send(null);
